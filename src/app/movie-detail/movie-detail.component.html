@@ -1,0 +1,21 @@
+<div class=" ">
+    <div class="row">
+       
+        <div class="col p-10">
+                <a routerLink="/">
+                    <img src="../../assets/image/back.png" class="mb-5" width="50" height="50" />
+                </a> 
+            <h1>{{data.title}}</h1>
+            <p>Rating: {{data.popularity/1000 |number:'1.0-0'}}/5</p>
+            <p>{{data.overview}}</p>
+            <p  class="d-inline mr-50 ">Release Date  </p>
+            <p class="d-inline">{{data.release_date}}</p><br>
+
+            <p class="d-inline mr-50">Original Language </p>
+            <p class="d-inline"> {{data.original_language}}</p>
+            </div>
+        <div class="col">
+            <img src={{imageurl+data.poster_path}}  width="800" height="700"/>
+        </div>
+    </div>
+</div>
